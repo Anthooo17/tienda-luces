@@ -1,0 +1,11 @@
+<div class="catalog-container">
+    <h1 class="catalog-title">✨IMPROLED | CATALOGO✨</h1>
+    <div class="product-card" *ngFor="let product of products">
+      <h2>{{ product.name }}</h2>
+      <p class="product-price">$ {{ product.price.toFixed(2) }}</p>
+      <button (click)="goToProductDetail(product.id)" class="detail-button">
+        Ver Detalle
+      </button>
+    </div>
+  </div>
+  

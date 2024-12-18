@@ -1,0 +1,83 @@
+/* Contenedor Principal */
+.product-detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background-color: #6fe950;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 2rem;
+  }
+  
+  /* Título */
+  .product-title {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Información del Producto */
+  .product-info {
+    background: #e0eb51;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    max-width: 400px;
+    width: 100%;
+    margin: 1rem auto;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .product-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgb(0, 0, 0);
+  }
+  
+  /* ID del Producto */
+  .product-id {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #000000;
+  }
+  
+  .product-id span {
+    font-weight: bold;
+    color: #ff0000;
+  }
+  
+  /* Descripción */
+  .product-description {
+    font-size: 1.1rem;
+    color: #000000;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Botón de Regresar */
+  .back-button {
+    background-color: #2980b9;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #1f5f8a;
+    transform: scale(1.05);
+  }
+  
+  /* Mensaje de Error */
+  .product-error p {
+    font-size: 1.2rem;
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,17 @@
+<div class="product-detail-container">
+    <h1 class="product-title">🌎 Productos Renovables con el Medio Ambiente 🌍</h1>
+    <div class="product-info" *ngIf="productId">
+      <p class="product-id">Producto N°: <span>{{ productId }}</span></p>
+      <p class="product-description">
+        Foco Led Inalambricos!! : A un mejor costo.
+      </p>
+      <button (click)="goBack()" class="back-button">
+        ⬅ Regresar al Catálogo
+      </button>
+    </div>
+    <div *ngIf="!productId" class="product-error">
+      <p>No se ha encontrado el ID del producto.</p>
+    </div>
+  </div>
+  
+  
